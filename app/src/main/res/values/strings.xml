@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyDorm</string>
+    <string name="todo">TODO</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="sifrenizi_giriniz">Sifrenizi giriniz</string>
+    <string name="mail_adresini_giriniz">Mail adresini giriniz</string>
+    <string name="yeni_yelik">Yeni Üyelik</string>
+    <string name="yeni_bir_yeli_e_ihtiyac_m_var">Yeni bir üyeliğe ihtiyacım var.</string>
+</resources>

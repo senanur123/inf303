@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "921070607059",
+    "project_id": "mydorm-35f95",
+    "storage_bucket": "mydorm-35f95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921070607059:android:52803be0dfed7cc14bd226",
+        "android_client_info": {
+          "package_name": "com.example.mydorm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921070607059-n327g4tenndovom5hn2alna88bqcoluc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYhlrtmlcyay2t1nKI5s5f9kRMvMIZg-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921070607059-n327g4tenndovom5hn2alna88bqcoluc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
