@@ -7,4 +7,6 @@
     <string name="mail_adresini_giriniz">Mail adresini giriniz</string>
     <string name="yeni_yelik">Yeni Üyelik</string>
     <string name="yeni_bir_yeli_e_ihtiyac_m_var">Yeni bir üyeliğe ihtiyacım var.</string>
+    <string name="email">register_mail</string>
+    <string name="register_mail">\@stud.tau.edu.tr</string>
 </resources>
