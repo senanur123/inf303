@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/purple2"
+        android:padding="20dp"
+        android:layout_marginBottom="35dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="User name"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_user_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/profilFName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="First Name:"
+            android:textAllCaps="true"
+            android:textSize="50px"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/profilEditFName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/profilFName"
+            android:layout_marginBottom="20dp">
+
+        </EditText>
+        <TextView
+            android:layout_below="@+id/profilFName"
+            android:id="@+id/profilLName"
+            android:text="Last Name:"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/profilEditLName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/profilEditFName"
+            android:layout_toRightOf="@id/profilLName"
+            android:layout_marginBottom="20dp">
+
+        </EditText>
+        <TextView
+            android:layout_below="@id/profilLName"
+            android:id="@+id/profilMail"
+            android:text="MAIL:"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/profilEditMail"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/profilEditLName"
+            android:layout_toRightOf="@+id/profilMail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/profilStudentId"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Student Id:"
+            android:layout_below="@id/profilMail"
+            android:fontFamily="@font/arbutus_slab"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/profilEditStudentId"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/profilMail"
+            android:layout_below="@+id/profilEditMail"
+            android:layout_marginBottom="20dp"
+            >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/profilBtnUpdate"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilStudentId"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            app:backgroundTint="@color/black"></Button>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/profilBtnAds"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="profilToAds"
+        android:text="GO TO MY ADVERTS"
+
+        android:layout_gravity="center"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+

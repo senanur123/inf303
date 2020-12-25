@@ -26,11 +26,7 @@ public class SignUp extends AppCompatActivity {
     Button callLogin;
     Button callSignUp;
 
-
     TextInputLayout regFName, regLName, regStudentId, regEmail, regPassword;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +65,7 @@ public class SignUp extends AppCompatActivity {
         callSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 String fname = regFName.getEditText().getText().toString().trim();
                 String lname = regLName.getEditText().getText().toString().trim();
