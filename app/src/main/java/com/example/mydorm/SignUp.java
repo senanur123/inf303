@@ -19,6 +19,10 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import org.w3c.dom.Text;
+
+
+
 public class SignUp extends AppCompatActivity {
 
     FirebaseAuth fAuth;
@@ -78,19 +82,20 @@ public class SignUp extends AppCompatActivity {
 
                 System.err.println(mail);
 
-                fAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(getApplicationContext(),"User Created.",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Login.class));
-                            
-                        } else {
-                            Toast.makeText(SignUp.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
-                            System.err.println(task.getException());
+                    fAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                Toast.makeText(getApplicationContext(),"User Created.",Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(),Login.class));
+
+                            } else {
+                                Toast.makeText(SignUp.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
+                                System.err.println(task.getException());
+                            }
                         }
-                    }
-                });
+                    });
+
 
 
             }
@@ -98,4 +103,7 @@ public class SignUp extends AppCompatActivity {
 
 
     }
+
+
+
 }
