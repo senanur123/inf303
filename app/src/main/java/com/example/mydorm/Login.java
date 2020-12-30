@@ -22,6 +22,7 @@ import static com.example.mydorm.R.id.btn_signupPage;
 
 public class Login extends AppCompatActivity {
 
+
     FirebaseAuth mAuth;
     Button callSignUp ;
     Button btnlogin;
@@ -67,7 +68,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(Login.this, "Giriş Başarılıdır!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Dashboard.class));
                         } else {
                             Toast.makeText(Login.this, "Hata!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressbar.setVisibility(View.GONE);
@@ -87,8 +88,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 
 }
