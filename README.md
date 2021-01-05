@@ -3,4 +3,4 @@ Software Engineering
 Mehmet Mücahit KAYA
 m.mucahitkaya@gmail.com
 Buradan ulaşabilirsiniz :)
-firebase için bilgileri de dilerseniz mail atabilirim 
+firebase için gmail verirseniz size yetkilendirme verebilirm 
